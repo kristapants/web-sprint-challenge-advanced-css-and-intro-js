@@ -261,10 +261,9 @@ function get20s(array){
 */
 function removeArtist(array, index) {
   array.splice(index, 1);
-  console.log(array);
+  console.log(array.length);
   }
 
- 
 
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
@@ -308,11 +307,12 @@ function lotsOfArt(array){
   const prolific = []
   for(i = 0; i < array.length; i++){
     if(array[i].paintings > 100) {
-      prolific.push(array[i]);
+      prolific.push(array[i].name);
     } 
   }
   return prolific;
 }
+
 
 
 // 🎨🎨 STRETCH 🎨🎨//
